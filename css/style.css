@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+/* ----------------------------------------------- main section */
+:root {
+  --green-color: #7acc2d;
+  --white-color: white;
+  --black-color: #313337;
+  /* Tipografia */
+  --normal: 12px;
+  /* Espaciado */
+  --space: 10px;
+  --space-2: 20px;
+  /* Box shadow */
+  --box: 0px 0 2px 1px #e6e5e9;
+}
+/* ----------------------------------------------- main section */
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-size: var(--normal);
+  font-family: "Open Sans", sans-serif;
+}
+
+p,
+label {
+  font-size: var(--normal);
+}
+nav {
+  display: flex;
+  background-color: var(--green-color);
+  padding: var(--space);
+  color: var(--white-color);
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+}
+nav li {
+  padding-left: 20px;
+  list-style: none;
+}
+nav li a {
+  color: var(--black-color);
+  text-decoration: none;
+}
+nav li a:hover {
+  color: var(--white-color);
+}
+/* ----------------------------------------------- main section */
+.main-section {
+  margin: 15%;
+  text-align: center;
+}
+/* ----------------------------------------------- Productos */
+
+.products {
+  background-image: url("../images/curve.png");
+  height: 50px;
+  background-size: cover;
+  background-position: center top;
+  padding: 20%;
+  display: flex;
+}
+.product {
+  padding: var(--space);
+  margin-top: -240px;
+}
+.product .content {
+  background-color: var(--white-color);
+  padding: var(--space);
+  box-shadow: var(--box);
+}
+.img-content {
+  text-align: center;
+}
+.main-button {
+  background-color: var(--green-color);
+  width: 100%;
+  padding: var(--space);
+  font-size: var(--normal);
+  color: var(--white-color);
+  border: 0;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.main-button:hover {
+  background-color: #5e9e22;
+}
+/* Beneficios */
+.beneficios {
+  padding: 10%;
+  display: flex;
+}
+.beneficio {
+  text-align: center;
+  padding: 20px;
+}
+.beneficio img {
+  max-height: 100px;
+}
+.text-beneficio {
+  text-align: justify;
+}
+/* Mentions */
+.mentions {
+  display: flex;
+  padding: 5%;
+}
+.mention img {
+  width: 100%;
+}
+h2.mention-title {
+  text-align: center;
+}
+.mention {
+  padding: var(--space);
+}
+.content-mention {
+  box-shadow: var(--box);
+}
+.mention .text {
+  padding: var(--space);
+}
+/* ----------------------------------------------- Venta */
+.modulo-pago {
+  background-color: var(--white-color);
+  box-shadow: var(--box);
+  padding: var(--space);
+}
+.modulo-pago-images {
+  max-width: 150px;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+}
+.data {
+  margin-top: var(--space);
+  width: 100%;
+  height: 35px;
+  border-radius: 2px;
+  border: 1px solid var(--black-color);
+  box-sizing: border-box;
+}
+.modulo-pago .main-button {
+  margin-top: 10px;
+}
+
+/* ----------------------------------------------- Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--normal);
+  background-color: var(--black-color);
+  padding: var(--space);
+  color: var(--white-color);
+}
+.contact a {
+  color: var(--green-color);
+}
